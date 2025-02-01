@@ -1,0 +1,2121 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* PRELOADER */
+
+.preloader {
+    width: 100vw;
+    height: calc(100vh - 3vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner {
+    animation: spin 1s linear Infinite;
+}
+
+.spinner img {
+    width: 3vw;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* HEADER */
+
+.header {
+    margin: 0 10%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropicon {
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+    width: 25px;
+    height: 5px;
+    margin-right: 5px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.menu:hover {
+    background-color: rgba(49, 81, 30, 0.3);
+    border-radius: 5px;
+}
+
+.dropdown a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown a:hover {
+    background-color: rgba(49, 81, 30, 0.3);
+}
+
+.dropdown {
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    background-color: white;
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    border-radius: 5px;
+    /* width: 200px; */
+    display: grid;
+    grid-template-columns: 100%;
+    z-index: 10;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.dropdown.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dropdown a {
+    color: var(--black);
+}
+
+.logo {
+    display: flex;
+    align-items: end;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    align-items: end;
+}
+
+.logo img {
+    margin-right: 5px;
+}
+
+/* .login button {
+    padding: 8px 16px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+} */
+
+.horizontal {
+    background-color: var(--gray);
+    width: 80%;
+    height: 0.1px;
+    /* height: 8px; */
+    /* border-radius: 100%; */
+    margin: 30px auto;
+    /* transform: skew(89.50deg); */
+}
+
+/* MAIN */
+
+.main {
+    justify-self: center;
+    width: 80%;
+    /* height: 550px; */
+    height: 35vw;
+    border-radius: 20px;
+    background-image: url('../img/image4.jpg');
+    background-size: cover;
+}
+
+
+
+.main p,
+.main6 p {
+    margin: 2vw;
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    font-size: 6vw;
+    font-family: "Kaushan Script", cursive;
+    font-weight: bold;
+}
+
+
+/* MAIN 2 */
+
+.main2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    align-items: center;
+    width: 80%;
+}
+
+.main2 p {
+    text-align: center;
+}
+
+.main2 div {
+    padding: 2vw;
+    margin: 2vw;
+}
+
+.main2 div:nth-child(2) {
+    padding: 10% 20%;
+    font-size: 1.5vw;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.main2 div:nth-child(2) img {
+    width: 2vw;
+}
+
+
+/* MAIN 3 */
+
+.main3 {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-self: center;
+}
+
+.main3 div:nth-child(1) p {
+    text-align: center;
+    margin: 1vw auto;
+    font-size: 1.2vw;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.visit-to {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 3vw 0;
+}
+
+.visit-to div:nth-child(1) {
+    padding: 0 6vw;
+}
+
+.visit-to div:nth-child(2) {
+    padding: 0 6vw;
+    border-left: 2px solid black;
+}
+
+.visit-to div:nth-child(1) img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.visit-to h1 {
+    font-size: 4vw;
+    font-family: "Kaushan Script", cursive;
+    opacity: 0.8;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+.visit-to p {
+    margin-bottom: 2vw;
+}
+
+/* MAIN 4 */
+
+.main4 {
+    width: 80%;
+    background-color: #31511E;
+    padding: 3vw 10%;
+    color: white;
+}
+
+.main4 h1 {
+    font-size: 4vw;
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 2vw;
+}
+
+.main4-heading {
+    margin: 0 20%;
+    text-align: center;
+}
+
+.catagories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.catagories h2 {
+    font-size: 2vw;
+    font-family: "Kaushan Script", cursive;
+}
+
+.catagories img {
+    width: 100%;
+    /* height: 400px; */
+    height: 25vw;
+    margin-bottom: 1vw;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.catagories div {
+    padding: 3vw;
+    text-align: center;
+}
+
+.catagories p {
+    margin-top: 1vw;
+}
+
+.catagories a {
+    color: var(--primary-color);
+}
+
+/* MAIN 5 */
+
+.main5 {
+    padding: 3vw 0 3vw 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main5>div:nth-child(2){
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.main5 a {
+    color: var(--gray); 
+}
+
+.main5>div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 100%;
+    align-self: center;
+    text-align: center;
+    padding: 0 8vw;
+}
+
+.main5>div:nth-child(1) h1 {
+    font-size: 4vw;
+    font-family: "Kaushan Script", cursive;
+    margin-bottom: 2vw;
+}
+
+.main5>div:nth-child(1) p {
+    margin-bottom: 2vw;
+}
+
+.main5>div:nth-child(2)>div:nth-child(1),
+.main5>div:nth-child(2)>div:nth-child(2) {
+    padding-left: 5vw;
+    overflow: hidden;
+}
+
+.main5>div:nth-child(2)>div:nth-child(1) img {
+    width: 100%;
+}
+
+.main5>div:nth-child(2)>div:nth-child(2) img {
+    width: 150%;
+
+}
+
+.main5>div:nth-child(2)>div:nth-child(1) img,
+.main5>div:nth-child(2)>div:nth-child(2) img {
+    height: 30vw;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* MAIN 6 */
+
+.main6 {
+    height: 40vw;
+    overflow: hidden;
+    background-image: url('../img/image7.jpg');
+    background-size: cover;
+}
+
+
+/* MAIN 7 */
+
+
+.main7 {
+    padding: 10% 20%;
+    text-align: center;
+}
+
+.main7 p:nth-child(1) {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+.main7 h3 {
+    font-size: 1.4vw;
+}
+
+.main7 p:nth-child(2) {
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+}
+
+/* FOOTER  */
+
+.footer {
+    background-color: #31511E;
+    padding: 3vw 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+
+.footer div:nth-child(1) {
+    margin-right: 6vw;
+}
+
+.footer>div:nth-child(2) {
+    margin-left: 6vw;
+}
+
+.footer div:nth-child(1) h4 {
+    font-size: 2vw;
+    font-family: "Kaushan Script", cursive;
+}
+
+
+.footer div:nth-child(1) p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* font-size: 0.8vw; */
+}
+
+.footer div:nth-child(1) img {
+    width: 1.2vw;
+    margin-right: 20px;
+}
+
+.footer div:nth-child(2) p:nth-child(1) {
+    /* font-size: 0.8vw; */
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer div:nth-child(2) a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer div:nth-child(2) p {
+    margin-bottom: 20px;
+}
+
+
+
+/* SHOWCASE */
+
+.showcase {
+    padding: 0 10%;
+    text-align: center;
+}
+
+.showcase h1 {
+    font-family: "Kaushan Script", cursive;
+    color: var(--black);
+    font-size: 5vw;
+    line-height: normal;
+}
+
+.showcaseDec {
+    color: var(--gray);
+}
+
+.showcaseDec2nd {
+    color: var(--black);
+    margin: 6vw;
+    font-size: 1.3vw;
+}
+
+.showcases {
+    padding: 3vw 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vw;
+}
+
+.showcases>div {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 25vw;
+    position: relative;
+}
+
+.showcases img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.plantName {
+    font-family: "Kaushan Script", cursive;
+    font-size: 2vw;
+    padding-top: 60%;
+    padding-bottom: 60%;
+    text-align: center;
+    /* top: 400px; */
+    top: 25vw;
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 9;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.showcases>div:hover .plantName {
+    top: 0;
+}
+
+
+/* GARDEN DESIGN IDEA */
+
+.designideades {
+    margin: 4vw 10%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+}
+
+.designideades h1 {
+    font-size: 2.5vw;
+    margin-right: 2vw;
+}
+
+.designideades p {
+    color: var(--gray);
+    margin-left: 2vw;
+}
+
+.design3 {
+    margin: 4vw 10%;
+    display: grid;
+    grid-template-columns: 5fr 6fr 7fr;
+    gap: 2vw;
+}
+
+.designs {
+    border-radius: 20px;
+    /* height: 400px; */
+    height: 25vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.design3 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.designdes {
+    padding: 2vw;
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 25vw;
+    /* height: 400px; */
+    opacity: 0;
+    transition: opacity 1.0s ease;
+
+}
+
+.designs:hover .designdes {
+    opacity: 1;
+}
+
+.designs:hover .movingarrow {
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    transform: rotate(45deg);
+}
+
+.designdes h2 {
+    font-size: 1.5vw;
+    margin-right: 3.5vw;
+    margin-bottom: 1vw;
+}
+
+.designdes p {
+    font-size: 1vw;
+}
+
+.movingarrow {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    padding: 5px;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 1px solid white;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    transition: transform 1.0s ease, background-color 1.0s ease;
+}
+
+.designhoriz {
+    margin: 4vw 10%;
+    display: grid;
+    grid-template-columns: 1fr auto 9fr;
+    align-items: center;
+}
+
+.designhoriz .horizontal {
+    width: 100%;
+}
+
+.designhoriz p {
+    background-color: white;
+    padding: 10px;
+    color: var(--gray);
+    font-size: 1vw;
+}
+
+.textalignright {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: right;
+    margin: 4vw 10%;
+}
+
+.textalignright h2 {
+    font-size: 3vw;
+}
+
+.textalignright span {
+    color: var(--gray);
+}
+
+.designideas {
+    gap: 2vw;
+    margin: 4vw 10%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.designideas>div:nth-child(2) {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.designideas>div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.designideas img {
+    border-radius: 20px;
+    width: 100%;
+    margin-bottom: 1vw;
+}
+
+.designideas h3 {
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+    font-weight: 400;
+}
+
+.designideas p {
+    font-size: 1vw;
+    color: var(--gray);
+}
+
+.designideas h2 {
+    font-size: 2.5vw;
+}
+
+.designideasleftH {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: end;
+}
+
+.designideasleftH p {
+    font-size: 2vw;
+    color: var(--gray);
+}
+
+.designideasleftH>div p:nth-child(2) {
+    color: var(--black);
+    text-align: right;
+}
+
+
+/* DIY */
+
+
+.diymain {
+    margin: 2vw 0;
+    background-image: url('../img/image7.jpg');
+    background-size: cover;
+    width: 100%;
+    /* height: 500px; */
+    height: 30vw;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.diymain h1,
+.plantcarehead h1 {
+    font-size: 3vw;
+    color: white;
+    margin-bottom: 1vw;
+}
+
+.diymain p span {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.6vw;
+    margin: 1vw;
+    font-size: 1vw;
+}
+
+.diymain2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    height: 25vw;
+    margin: 2vw 20%;
+    gap: 2vw;
+}
+
+.diymain2 .box {
+    width: 15vw;
+    height: 15vw;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    background-size: cover;
+    justify-self: center;
+    border-radius: 20px;
+}
+
+.diymain2 .box p {
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 2vw;
+    font-weight: bold;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100%;
+    width: 100%;
+}
+
+.diys {
+    display: grid;
+}
+
+.diy1 {
+    align-items: start;
+}
+
+.diy2 {
+    align-items: center;
+}
+
+.diy3 {
+    align-items: end;
+}
+
+.diys .designideasleftH p {
+    font-size: 1.5vw;
+}
+
+.diymain2 .box1 {
+    background-image: url('../img/image1.jpg');
+}
+
+.diymain2 .box2 {
+    background-image: url('../img/image2.jpg');
+}
+
+.diymain2 .box3 {
+    background-image: url('../img/image3.jpg');
+}
+
+.textaligncenter {
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin: 4vw 10%;
+}
+
+.textaligncenter h2 {
+    font-size: 3vw;
+}
+
+.textaligncenter span {
+    color: var(--gray);
+}
+
+
+
+/* DIYCAROUSEL */
+
+
+
+.carousel-container {
+    margin: 4vw 10%;
+    overflow: hidden;
+}
+
+.carousel-container h1 {
+    font-size: 2.5vw;
+    margin-right: 2vw;
+}
+
+.nextprev-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.nextprev-container .nextprev {
+    text-align: right;
+
+}
+
+.nextprev button {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel {
+    margin: 2vw 0;
+    display: flex;
+}
+
+.carousel-img {
+    border-radius: 20px;
+    overflow: hidden;
+    flex: 0 0 25%;
+    max-width: calc(25% - 20px);
+    margin: 10px;
+    height: 20vw;
+}
+
+.carousel-img img {
+    overflow: hidden;
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+/* PLANT CARE GUIDE */
+
+
+.plantcarehead {
+    margin: 2vw 0;
+    background-image: url('../img/leaf1.jpg');
+    background-size: cover;
+    width: 100%;
+    /* height: 500px; */
+    height: 30vw;
+    display: grid;
+    text-align: center;
+    align-items: center;
+}
+
+.plantcarehead p {
+    margin: 1vw;
+    color: white;
+    font-size: 1vw;
+}
+
+.forbeginner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 4vw 10%;
+}
+
+.beginnercontent {
+    margin: 2vw;
+}
+
+.beginnercontent div:nth-child(1) {
+    position: relative;
+    height: 20vw;
+}
+
+.beginnercontent img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.beginnerhead {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    margin: 2vw;
+    padding: 1vw;
+    background-color: white;
+    transition: opacity 0.5s ease-in-out;
+    border-radius: 20px;
+    font-size: 1.5vw;
+}
+
+.beginnercontent:hover .beginnerhead {
+    opacity: 0;
+}
+
+.beginnerpara {
+    opacity: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    border-radius: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.beginnerp {
+    color: white;
+}
+
+.beginnerpara>div {
+    padding: 1vw;
+}
+
+.beginnercontent:hover .beginnerpara {
+    opacity: 1;
+}
+
+.carouselcontentdiv {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carouselhead {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5vw;
+    display: flex;
+    color: white;
+    transition: top 1.0s ease;
+}
+
+.carouselhead h2 {
+    padding: 1vw;
+}
+
+.carouselpara p {
+    padding: 1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carouselpara {
+    opacity: 0;
+    display: flex;
+    align-items: end;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1.0s ease;
+    color: white;
+}
+
+.carouselpara span {
+    font-weight: bold;
+}
+
+.carouselcontentdiv:hover .carouselhead {
+    top: 0;
+}
+
+.carouselcontentdiv:hover .carouselpara {
+    opacity: 1;
+}
+
+.seasonal {
+    margin: 4vw 10%;
+}
+
+.seasonal1,
+.seasonal2 {
+    display: grid;
+    height: 20vw;
+}
+
+.seasonal1 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.seasonal2 {
+    grid-template-columns: 2fr 1fr;
+}
+
+.seasonalflower {
+    margin: 1vw;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+}
+
+.seasonalflower:hover .arrow90deg {
+    transform: rotate(45deg);
+    background-color: black;
+}
+
+.seasonalflower:hover .seasflowhead {
+    opacity: 0;
+}
+
+.seasonalflower:hover .seasdec {
+    opacity: 1;
+}
+
+.seasflowimg img {
+    height: 20vw;
+    object-fit: cover;
+    width: 100%;
+}
+
+.arrow90deg {
+    padding: 0.5vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    transform: rotate(-45deg);
+    z-index: 9;
+    transition: transform 1.0s ease, background-color 1.0s ease;
+}
+
+.arrow90deg img {
+    border-radius: 50%;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.seasonaldec {
+    margin: 4vw 10%;
+    text-align: center;
+    color: var(--gray);
+}
+
+.seasflowhead {
+    position: absolute;
+    font-size: 1.5vw;
+    bottom: 0;
+    padding: 1vw;
+    color: white;
+    transition: opacity 1.0s ease;
+}
+
+.seasdec {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1vw;
+    top: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+    transition: opacity 1.0s ease;
+}
+
+.seasdec span {
+    font-weight: bold;
+}
+
+.seasdec p {
+    padding: 1vw;
+}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1367px) {
+
+    .footer div:nth-child(1) h4 {
+        font-size: 3vw;
+    }
+
+    .designhoriz p {
+        font-size: 1.2vw;
+    }
+
+    .spinner img {
+        width: 4vw;
+    }
+
+    .designs {
+        height: 27vw;
+    }
+
+    .diymain h1,
+    .plantcarehead h1 {
+        font-size: 4vw;
+    }
+
+    .plantcarehead p,
+    .diymain p span {
+        font-size: 1.5vw;
+    }
+
+    .main,
+    .visit-to div:nth-child(1) img,
+    .catagories img,
+    .main5>div:nth-child(2)>div:nth-child(1) img,
+    .main5>div:nth-child(2)>div:nth-child(2) img,
+    .showcases>div,
+    .designs,
+    .designideas img,
+    .diymain2 .box,
+    .carousel-img,
+    .beginnercontent img,
+    .beginnerhead,
+    .beginnerpara,
+    .carouselcontentdiv,
+    .seasonalflower {
+        border-radius: 10px;
+    }
+
+    .designdes p {
+        font-size: 1.2vw;
+    }
+
+    .seasonal1,
+    .seasonal2 {
+        height: 22vw;
+    }
+
+    .seasflowimg img {
+        height: 22vw;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .footer div:nth-child(1) h4 {
+        font-size: 3.5vw;
+    }
+
+    .designhoriz p {
+        font-size: 1.4vw;
+    }
+
+    .spinner img {
+        width: 5vw;
+    }
+
+    .main3 div:nth-child(1) p {
+        font-size: 1.5vw;
+    }
+
+    .visit-to div:nth-child(1),
+    .visit-to div:nth-child(2) {
+        padding: 0 5vw;
+    }
+
+    .carousel-img,
+    .carousel-img img {
+        height: 25vw;
+    }
+
+    .catagories img {
+        height: 30vw;
+    }
+
+    .header {
+        margin: 0 8%;
+    }
+
+    .horizontal,
+    .main3,
+    .main2,
+    .main4,
+    .main {
+        width: 84%;
+    }
+
+    .dropdown {
+        right: 8%;
+    }
+
+    .main4,
+    .footer,
+    .showcases {
+        padding: 3vw 8%;
+    }
+
+    .designideades,
+    .design3,
+    .designhoriz,
+    .textalignright,
+    .designideas,
+    .textaligncenter,
+    .carousel-container,
+    .forbeginner,
+    .seasonal,
+    .seasonaldec {
+        margin: 4vw 8%;
+    }
+
+    .main5 {
+        padding: 3vw 0 3vw 8%;
+    }
+
+    .main5 div:nth-child(1) {
+        padding: 0 4vw;
+    }
+
+    .main2 div:nth-child(2) {
+        font-size: 2vw;
+    }
+
+    .main2 div:nth-child(2) img {
+        width: 2.5vw;
+    }
+
+    .main2 div {
+        padding: 1.5vw;
+        margin: 1.5vw;
+    }
+
+    .main7 {
+        padding: 10% 15%;
+    }
+
+    .designdes h2 {
+        font-size: 1.8vw;
+    }
+
+    .designdes p {
+        font-size: 1.4vw;
+    }
+
+    .diymain2 {
+        margin: 2vw 15%;
+    }
+
+    .diymain2 .box {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .beginnercontent div:nth-child(1),
+    .beginnercontent img {
+        height: 23vw;
+    }
+
+    .beginnerhead {
+        font-size: 1.8vw;
+    }
+
+    .seasonal1,
+    .seasonal2 {
+        height: 24vw;
+    }
+
+    .seasflowimg img {
+        height: 24vw;
+    }
+
+}
+
+@media (max-width:1025px) {
+
+    .footer div:nth-child(1) h4 {
+        font-size: 4vw;
+    }
+
+    .designhoriz p {
+        font-size: 1.6vw;
+    }
+
+    .spinner img {
+        width: 6vw;
+    }
+
+    .main,
+    .visit-to div:nth-child(1) img,
+    .catagories img,
+    .main5>div:nth-child(2)>div:nth-child(1) img,
+    .main5>div:nth-child(2)>div:nth-child(2) img,
+    .showcases>div,
+    .designs,
+    .designideas img,
+    .diymain2 .box,
+    .carousel-img,
+    .beginnercontent img,
+    .beginnerhead,
+    .beginnerpara,
+    .carouselcontentdiv,
+    .seasonalflower {
+        border-radius: 8px;
+    }
+
+    .header {
+        margin: 0 4%;
+    }
+
+    .horizontal,
+    .main3,
+    .main2,
+    .main4,
+    .main {
+        width: 92%;
+    }
+
+    .dropdown {
+        right: 4%;
+    }
+
+    .main4,
+    .footer,
+    .showcases {
+        padding: 3vw 4%;
+    }
+
+    .main7 {
+        padding: 10%;
+    }
+
+    .designideades,
+    .design3,
+    .designhoriz,
+    .textalignright,
+    .designideas,
+    .textaligncenter,
+    .carousel-container,
+    .forbeginner,
+    .seasonal,
+    .seasonaldec {
+        margin: 4vw 4%;
+    }
+
+    .beginnercontent div:nth-child(1),
+    .beginnercontent img {
+        height: 25vw;
+    }
+
+    .beginnerp,
+    .seasonaldec,
+    .seasdec {
+        font-size: 1.5vw;
+    }
+
+    .beginnerhead {
+        font-size: 2.2vw;
+    }
+
+    .movingarrow {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .designideas h3 {
+        font-size: 1.8vw;
+    }
+
+    .designideas p {
+        font-size: 1.3vw;
+    }
+
+    .designideasleftH p {
+        font-size: 2vw;
+    }
+
+    .designideades h1,
+    .designideas h2 {
+        font-size: 2.8vw;
+    }
+
+    .designideades p {
+        font-size: 1.5vw;
+    }
+
+    .main5 {
+        padding: 3vw 0 3vw 4%;
+    }
+
+
+    .showcases {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5vw;
+    }
+
+    .showcases>div {
+        height: 35vw;
+    }
+
+    .showcaseDec {
+        font-size: 1.5vw;
+    }
+
+    .showcaseDec2nd {
+        margin: 6vw 0;
+        font-size: 1.5vw;
+    }
+
+    .plantName {
+        top: 35vw;
+        font-size: 3vw;
+    }
+
+    .design3,
+    .designideas,
+    .diymain2 {
+        gap: 1.5vw;
+    }
+
+    .diymain2 {
+        margin: 2vw 10%;
+        height: 35vw;
+    }
+
+    .seasonal1,
+    .seasonal2 {
+        height: 26vw;
+    }
+
+    .arrow90deg,
+    .arrow90deg img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .plantcarehead,
+    .diymain {
+        height: 35vw;
+    }
+
+    .diymain2 .box {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .carousel-img {
+        flex: 0 0 33.33%;
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width:768px) {
+
+    .footer div:nth-child(1) h4 {
+        font-size: 6vw;
+    }
+
+    .spinner img {
+        width: 7vw;
+    }
+
+    .main2 p {
+        font-size: 2vw;
+    }
+
+    .main3 div:nth-child(1) p {
+        font-size: 3vw;
+    }
+
+    .visit-to p {
+        font-size: 2vw;
+    }
+
+    .main4-heading p {
+        font-size: 2vw;
+    }
+
+    .main4-heading {
+        margin: 0 10%;
+    }
+
+    .catagories h2 {
+        font-size: 3vw;
+    }
+
+    .catagories p {
+        font-size: 2vw;
+    }
+
+    .catagories {
+        gap: 1vw;
+    }
+
+    .catagories div {
+        padding: 1vw;
+    }
+
+    .catagories img {
+        height: 35vw;
+    }
+
+    .main5 div:nth-child(1) p {
+        font-size: 2vw;
+    }
+
+    .main5 div:nth-child(1) a {
+        font-size: 2vw;
+    }
+
+    .main7 p:nth-child(2) {
+        font-size: 1.5vw;
+    }
+
+    .main7 h3 {
+        font-size: 1.8vw;
+    }
+
+    .showcaseDec,
+    .showcaseDec2nd {
+        font-size: 2vw;
+    }
+
+    .designideades p {
+        font-size: 2vw;
+    }
+
+    .movingarrow {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .designs,
+    .designdes {
+        height: 30vw;
+    }
+
+    .designdes h2 {
+        font-size: 2.5vw;
+    }
+
+    .designideas h3 {
+        font-size: 2vw;
+        margin-bottom: 1vw;
+        font-weight: 400;
+    }
+
+    .designideas p {
+        font-size: 1.5vw;
+    }
+
+    .designideasleftH p {
+        font-size: 2vw;
+    }
+
+    .diys .designideasleftH p {
+        font-size: 2vw;
+    }
+
+    .diymain2 .box p {
+        font-size: 3vw;
+    }
+
+    .diymain2 .box {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    .nextprev-container h1 {
+        font-size: 2.8vw;
+    }
+
+    .beginnerp,
+    .seasonaldec,
+    .seasdec {
+        font-size: 2vw;
+    }
+
+    .carouselpara p {
+        font-size: 2vw;
+    }
+
+    .carouselhead h2 {
+        font-size: 2.5vw;
+    }
+
+    .showcaseDec,
+    .showcaseDec2nd {
+        font-size: 2.5vw;
+    }
+
+    .designhoriz p {
+        font-size: 1.8vw;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .footer div:nth-child(1) h4 {
+        font-size: 8vw;
+    }
+
+    .footer {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .footer div:nth-child(1) {
+        margin-right: 0;
+    }
+    
+    .footer>div:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .designhoriz p {
+        font-size: 2.2vw;
+    }
+
+    .spinner img {
+        width: 8vw;
+    }
+
+    .showcase h1 {
+        font-size: 7vw;
+    }
+
+    .showcaseDec,
+    .showcaseDec2nd {
+        font-size: 3vw;
+    }
+
+    .showcases {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcases>div {
+        height: 60vw;
+    }
+
+    .plantName {
+        top: 60vw;
+        font-size: 6vw;
+    }
+
+    .designideades {
+        grid-template-columns: 100%;
+        gap: 4vw;
+    }
+
+    .designideades h1,
+    .designideas h2 {
+        font-size: 5vw;
+    }
+
+    .designideades p {
+        font-size: 3vw;
+    }
+
+    .design3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .designs,
+    .designdes {
+        height: 40vw;
+    }
+
+    .designdes h2 {
+        font-size: 4vw;
+    }
+
+    .designdes p {
+        font-size: 2.5vw;
+    }
+
+    .textalignright h2 {
+        font-size: 4vw;
+    }
+
+    .designideas {
+        gap: 4vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .designideas>div:nth-child(2) {
+        grid-template-columns: 1fr;
+    }
+
+    .designideas h3 {
+        font-size: 3vw;
+    }
+
+    .designideas p {
+        font-size: 2vw;
+    }
+
+    .designideasleftH p {
+        font-size: 3vw;
+    }
+
+    .plantcarehead,
+    .diymain,
+    .main,
+    .main6 {
+        height: 50vw;
+    }
+
+    .diymain h1,
+    .plantcarehead h1 {
+        font-size: 6vw;
+    }
+
+    .plantcarehead p,
+    .diymain p span {
+        font-size: 3vw;
+    }
+
+    .diymain2 {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 2vw;
+    }
+
+    .diymain2 .box {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .diymain2 .box p {
+        font-size: 8vw;
+    }
+
+    .textaligncenter h2 {
+        font-size: 5vw;
+    }
+
+    .diymain2 .designideasleftH {
+        margin: 5vw 10vw;
+    }
+
+    .diymain2 .designideasleftH p {
+        font-size: 4vw;
+    }
+
+    .nextprev-container h1 {
+        font-size: 5vw;
+    }
+
+    .carousel-img {
+        flex: 0 0 60%;
+        max-width: calc(60% - 20px);
+    }
+
+    .carousel-img,
+    .carousel-img img {
+        height: 60vw;
+    }
+
+    .forbeginner {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+
+    .beginnercontent div:nth-child(1),
+    .beginnercontent img {
+        height: 50vw;
+    }
+
+    .beginnerhead {
+        font-size: 5vw;
+    }
+
+    .beginnerp,
+    .seasonaldec {
+        font-size: 3vw;
+    }
+
+    .seasdec {
+        font-size: 4vw;
+    }
+
+    .seasonal {
+        margin: 8vw 4%;
+    }
+
+    .seasonal1,
+    .seasonal2 {
+        grid-template-columns: 1fr;
+        height: 100vw;
+    }
+
+    .seasflowimg img {
+        object-fit: cover;
+        height: 50vw;
+    }
+
+    .seasflowhead {
+        font-size: 4vw;
+    }
+
+    .arrow90deg,
+    .arrow90deg img {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .seasonalflower {
+        margin: 2vw;
+    }
+
+    .carouselhead h2 {
+        font-size: 5vw;
+    }
+
+    .carouselpara p {
+        font-size: 4vw;
+    }
+
+    .main2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .main2 div:nth-child(2) {
+        padding: 5% 30%;
+        font-size: 4.2vw;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .main2 div:nth-child(2) img {
+        width: 6vw;
+    }
+
+    .main2 p {
+        font-size: 3vw;
+    }
+
+    .main3 div:nth-child(1) p {
+        font-size: 3vw;
+    }
+
+    .main p,
+    .main6 p {
+        font-size: 8vw;
+    }
+
+    .visit-to {
+        grid-template-columns: 100%;
+    }
+
+    
+.visit-to div:nth-child(2) {
+    border-left: 2px solid transparent;
+    border-top: 1px solid gray;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.visit-to div:nth-child(1) img {
+    width: 100%;
+    object-fit: cover;
+    height: 50vw;
+    margin-bottom: 4vw;
+}
+
+.visit-to div:nth-child(2) p,.main4-heading p, .catagories p, .main5>div:nth-child(1) p{
+    font-size: 3vw;
+}
+
+.visit-to h1, .main4 h1 {
+    font-size: 6vw;
+}
+
+.main4-heading {
+    margin: 0 5%;
+    margin-bottom: 4vw;
+}
+
+.catagories {
+    grid-template-columns: 1fr;
+    gap: 2vw;
+}
+
+.catagories h2 {
+    font-size: 4vw;
+}
+
+.catagories img {
+    height: 50vw;
+}
+
+.main5 {
+    grid-template-columns: 100%;
+    gap: 4vw;
+}
+
+.main5>div:nth-child(1) h1 {
+    font-size: 6vw;
+}
+
+.main5>div:nth-child(2)>div:nth-child(1) img,
+.main5>div:nth-child(2)>div:nth-child(2) img{
+    height: 60vw;
+}
+
+.main7 p:nth-child(2) {
+    font-size: 2.5vw;
+}
+
+.main7 h3 {
+    font-size: 3vw;
+}
+
+.main7 p:nth-child(1) {
+    font-size: 3vw;
+}
+
+}
+
+@media (max-width:480px){
+
+    .footer div:nth-child(1) h4 {
+        font-size: 10vw;
+    }
+
+    .designhoriz p {
+        font-size: 2.6vw;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .spinner img {
+        width: 10vw;
+    }
+
+    .showcaseDec,
+    .showcaseDec2nd {
+        font-size: 4vw;
+    }
+
+    .designideades h1,
+    .designideas h2 {
+        font-size: 6vw;
+    }
+
+    .designideades p {
+        font-size: 4vw;
+    }
+
+    .design3 {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+
+    .designs,
+    .designdes {
+        height: 60vw;
+    }
+
+    .designdes h2 {
+        font-size: 5vw;
+    }
+
+    .designdes p {
+        font-size: 4vw;
+    }
+
+    .textalignright h2 {
+        font-size: 5vw;
+    }
+
+    .designideas {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .designideas h3 {
+        font-size: 4vw;
+    }
+
+    .designideas p {
+        font-size: 3vw;
+    }
+
+    .plantcarehead,
+    .diymain,
+    .main,
+    .main6 {
+        height: 60vw;
+    }
+
+    .diymain h1,
+    .plantcarehead h1 {
+        font-size: 7vw;
+    }
+
+    .plantcarehead p,
+    .diymain p span {
+        font-size: 3.5vw;
+    }
+
+    .diymain2 .box {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .textaligncenter h2 {
+        font-size: 6vw;
+    }
+
+    .nextprev-container h1 {
+        font-size: 6vw;
+    }
+
+    .nextprev-container{
+        grid-template-columns: 30% 70%;
+    }
+
+    .carousel-img {
+        flex: 0 0 80%;
+        max-width: calc(80% - 20px);
+    }
+
+    .carousel-img,
+    .carousel-img img {
+        height: 80vw;
+    }
+
+    .beginnercontent div:nth-child(1),
+    .beginnercontent img {
+        height: 60vw;
+    }
+
+    .beginnerhead {
+        font-size: 6vw;
+    }
+
+    .beginnerp,
+    .seasonaldec {
+        font-size: 4vw;
+    }
+
+    .seasdec {
+        font-size: 5vw;
+    }
+
+    .seasflowhead {
+        font-size: 5vw;
+    }
+
+    .arrow90deg,
+    .arrow90deg img {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .carouselhead h2 {
+        font-size: 6vw;
+    }
+
+    .carouselpara p {
+        font-size: 5vw;
+    }
+
+    .main2 p {
+        font-size: 4vw;
+    }
+
+    .main3 div:nth-child(1) p {
+        font-size: 4vw;
+    }
+
+    .main p,
+    .main6 p {
+        font-size: 10vw;
+}
+
+.visit-to div:nth-child(2) p,.main4-heading p, .catagories p, .main5>div:nth-child(1) p{
+    font-size: 4vw;
+}
+
+.visit-to h1, .main4 h1 {
+    font-size: 7vw;
+}
+
+.catagories h2 {
+    font-size: 5vw;
+}
+
+.catagories img {
+    height: 60vw;
+}
+
+.main5>div:nth-child(1) h1 {
+    font-size: 7vw;
+}
+
+.main7 p:nth-child(2) {
+    font-size: 3vw;
+}
+
+.main7 h3 {
+    font-size: 4vw;
+}
+
+.main7 p:nth-child(1) {
+    font-size: 4vw;
+}
+}
