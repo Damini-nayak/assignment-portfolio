@@ -1,9 +1,8 @@
-:root{
-    --primary-color: #DBE66E;
-    --primary-color-dark: #cfdb63;
-    --body-color: #E1E1E1;
-    --black: #020601;
-    --light: #ECECEC;
-    --gray: #727471;
-    --lightgray: #ccc;
+:root {
+    --1: #001427;
+    --2: #FDF8F8;
+    --3: #FFD710;
+    --4: #569CD6;
+    --5: #64C991;
+    --6: #CE9178;
 }

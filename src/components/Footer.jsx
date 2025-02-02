@@ -3,11 +3,17 @@ import Base from './Base'
 
 export default function Footer() {
     return (
-        <div className='footer'>
-            <div><h4>Get in touch</h4><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis voluptatum iste, quos aut quaerat, officia quo deleniti laudantium itaque cum nobis sit consectetur eaque accusamus laborum natus in est vitae?</p>
-            {/* <div><img src={Base.instagram} alt="" /><a href="https://in.pinterest.com/Diptinayakryp/"><img src={Base.pinterest} alt="" /></a><img src="" alt="" /></div> */}
+        <>
+        <div className="footer">
+            <div className='footer-sec1'>
+            <div><a href="mailto:damininayak.ryp@gmail.com" target='_blank'><img src={Base.email} alt="email" /></a></div>
+            <div><a href="tel:+917049377452" target='_blank'><img src={Base.phone} alt="phone" /></a></div>
+            <div><a href="https://www.instagram.com/_dip_ti/#" target='_blank'><img src={Base.instagram} alt="instagram" /></a></div>
+            <div><a href="https://www.linkedin.com/in/damini-nayak" target='_blank'><img src={Base.linkedin} alt="linkedin" /></a></div>
+            <div><a href="https://github.com/Damini-nayak" target='_blank'><img src={Base.github} alt="github" /></a></div>
             </div>
-            <div><p>Please call and send email</p><p></p><p><a href="mainto:contact@greenhaven.com">contact@greenhaven.com</a></p><p><a href="tel:+911234567892">+91 1234567892</a></p></div>
+            <div className='footer-sec2'><p>Created By <a href="https://www.devmini.in/" target='_blank'>devmini.in</a></p></div>
         </div>
+        </>
     );
 }
