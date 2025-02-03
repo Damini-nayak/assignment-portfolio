@@ -6,11 +6,33 @@ import Footer from './components/Footer'
 import Routes from './Routes'
 
 function App() {
+  useEffect(() => {
+    window.particlesJS("particles-container", {
+      particles: {
+        number: { value: 50 },
+        size: { value: 3 },
+        move: { speed: 2 },
+        color: { value: "#ffffff" },
+      },
+      interactivity: {
+        events: { onhover: { enable: true, mode: "repulse" } },
+      },
+    });
+  }, []);
   return (
     <>
-          <Header />
-          <Routes />
-          <Footer />
+    <div
+        id="particles-container"
+        style={{
+          position: "fixed",
+          width: "100%",
+          height: "100vh",
+          zIndex: -1,
+        }}
+      ></div>
+      <Header />
+      <Routes />
+      <Footer />
     </>
   );
 }

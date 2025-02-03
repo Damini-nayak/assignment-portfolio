@@ -15,7 +15,7 @@ h6 {
 }
 
 body{
-    background-color:var(--2);
+    background-color:var(--1);
 }
 
 .header a:hover{
@@ -24,8 +24,9 @@ body{
 
 .header a{
     text-decoration: none;
-    color:var(--1);
+    color:var(--2);
     margin: 0 2vw;
+    /* z-index: 2; */
 }
 
 .header{
@@ -38,7 +39,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 50% 50%;
-    color: var(--1);
+    color: var(--2);
     height: calc(100vh - 4vw);
 }
 
@@ -50,7 +51,7 @@ body{
     overflow: hidden;
     text-align: center;
     margin: 4vw auto;
-    border : 1px solid var(--1);
+    border : 1px solid var(--2);
     padding:1vw;
 }
 
@@ -66,7 +67,7 @@ body{
     font-family: "Caveat", serif;
 }
 
-.home-grid2 p span {
+.typed-text{
     font-size: 3vw;
 }
 
@@ -75,6 +76,7 @@ body{
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
+    z-index: 2;
 }
 
 .footer-sec1{
@@ -88,7 +90,7 @@ body{
 }
 
 .footer-sec2{
-    color: var(--1);
+    color: var(--2);
     text-align: center;
 }
 
@@ -103,6 +105,7 @@ body{
 }
 
 .aboutme h1, .portfolio h1{
+    color: var(--2);
     margin: 2vw;
     font-size: 3vw;
     font-family: "Caveat", serif;
@@ -110,6 +113,7 @@ body{
 
 .aboutme p{
     font-size: 1.3vw;
+    color: var(--2);
 }
 
 .skills div{
@@ -123,6 +127,7 @@ body{
 
 .skills li{
     margin: 1vw;
+    color: var(--2);
 }
 
 .portfolio{
@@ -136,23 +141,23 @@ body{
 }
 
 .projects div{
-    border: 1px solid var(--1);
+    border: 1px solid var(--2);
     margin: 2vw;
     padding: 1vw;
     transition: background-color 0.5s ease;
 }
 
 .projects div:hover{
-    background-color: var(--1);
+    background-color: var(--2);
 }
 
 .projects div:hover .proA{
-    color:var(--2);
+    color:var(--1);
 }
 
 .proA{
     text-decoration: none;
-    color: var(--1);
+    color: var(--2);
     transition: color 0.5s ease;
     font-weight: 500;
 }
@@ -202,7 +207,7 @@ body{
         text-align: center;
     }
 
-    .home-grid2 p span{
+    .typed-text{
         font-size: 4vw;
     }
     
@@ -260,7 +265,7 @@ body{
         font-size: 8vw;
     }
     
-    .home-grid2 p span {
+    .typed-text{
         font-size: 5vw;
     }
 
