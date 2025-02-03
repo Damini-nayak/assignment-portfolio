@@ -168,6 +168,14 @@ body{
     .container{
         height: 50vw;
     }
+
+    .footer img{
+        width: 3vw;
+    }
+
+    .projects{
+        margin: 4vw 28vw;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -183,12 +191,28 @@ body{
     .aboutme p{
         font-size: 1.5vw;
     }
+
+    .footer img{
+        width: 4vw;
+    }
+
+    .projects{
+        margin: 4vw 26vw;
+    }
 }
 
 @media (max-width:1025px) {
 
     .aboutme p{
         font-size: 1.8vw;
+    }
+
+    .footer img{
+        width: 5vw;
+    }
+
+    .projects{
+        margin: 4vw 24vw;
     }
 }
 
@@ -203,7 +227,8 @@ body{
         height: 100vw;
     }
 
-    .home-grid2 h1, .home-grid2 p{
+    .home-grid2 h1{
+        font-size: 8vw;
         text-align: center;
     }
 
@@ -212,8 +237,7 @@ body{
     }
     
     .footer img{
-        width: 4vw;
-        margin: 0 3vw;
+        width: 6vw;
     }
 
     .footer{
@@ -235,7 +259,11 @@ body{
     .projects{
         display: grid;
         grid-template-columns: 100%;
-        margin: 4vw 30vw;
+        margin: 4vw 22vw;
+    }
+
+    .projects div{
+        margin: 3vw;
     }
     
 }
@@ -246,12 +274,32 @@ body{
         height: 10vw;
     }
 
+    .home-grid2 h1{
+        font-size: 10vw;
+    }
+
+    .typed-text{
+        font-size: 5vw;
+    }
+
     .aboutme h1, .portfolio h1{
         font-size: 8vw;
     }
-
+    
     .aboutme p{
         font-size: 3vw;
+    }
+
+    .footer img{
+        width: 7vw;
+    }
+
+    .projects div{
+        margin: 4vw;
+    }
+
+    .projects{
+        margin: 4vw 20vw;
     }
 }
 
@@ -260,13 +308,9 @@ body{
     .header{
         height: 12vw;
     }
-
-    .home-grid2 h1{
-        font-size: 8vw;
-    }
     
     .typed-text{
-        font-size: 5vw;
+        font-size: 6vw;
     }
 
     .home-grid2{
@@ -274,7 +318,7 @@ body{
     }
 
     .footer img{
-        width: 6vw;
+        width: 8vw;
         margin: 0 3vw;
     }
 
@@ -288,5 +332,9 @@ body{
 
     .aboutme{
         margin-bottom: 6vw;
+    }
+
+    .projects div{
+        margin: 5vw;
     }
 }

@@ -4,7 +4,7 @@ import Base from './Base'
 export default function Footer() {
     return (
         <>
-        <div className="footer">
+        <div className="footer" data-aos="fade-up">
             <div className='footer-sec1'>
             <div><a href="mailto:damininayak.ryp@gmail.com" target='_blank'><img src={Base.email} alt="email" /></a></div>
             <div><a href="tel:+917049377452" target='_blank'><img src={Base.phone} alt="phone" /></a></div>

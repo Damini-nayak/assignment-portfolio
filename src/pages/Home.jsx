@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <div className='container'>
-        <div className='home-grid1'><img src={Base.image1} alt="" /></div>
+        <div className='home-grid1' data-aos="zoom-in"><img src={Base.image1} alt="" /></div>
         <div className='home-grid2'>
           <div><h1>DAMINI NAYAK</h1>
             <ReactTyped

@@ -19,6 +19,11 @@ function App() {
       },
     });
   }, []);
+
+  useEffect(() => {
+    window.AOS.init(); // Initialize AOS
+  }, []);
+  
   return (
     <>
     <div
